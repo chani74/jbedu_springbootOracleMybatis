@@ -8,4 +8,11 @@
 		INSERT INTO membertbl(mid,mpw,mname,memail,mage) values (#{param1},#{param2},#{param3},#{param4},#{param5})
 	</insert>
 	
+	<select id="memberLitDao" resultType="com.jbedu.member.dto.MemberDto">
+		SELECT * FROM membertbl
+	</select>
+	
+	<delete id="memberDeleteDao">
+		DELETE FROM membertbl WHERE mid = #{param1}
+	</delete>
 </mapper>

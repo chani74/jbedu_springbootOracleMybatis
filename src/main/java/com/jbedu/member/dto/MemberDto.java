@@ -8,17 +8,19 @@ public class MemberDto {
 	private String mname;
 	private String memail;
 	private int mage;
+	private Timestamp mdate;
 	public MemberDto() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public MemberDto(String mid, String mpw, String mname, String memail, int mage) {
+	public MemberDto(String mid, String mpw, String mname, String memail, int mage, Timestamp mdate) {
 		super();
 		this.mid = mid;
 		this.mpw = mpw;
 		this.mname = mname;
 		this.memail = memail;
 		this.mage = mage;
+		this.mdate = mdate;
 	}
 	public String getMid() {
 		return mid;
@@ -50,5 +52,12 @@ public class MemberDto {
 	public void setMage(int mage) {
 		this.mage = mage;
 	}
+	public Timestamp getMdate() {
+		return mdate;
+	}
+	public void setMdate(Timestamp mdate) {
+		this.mdate = mdate;
+	}
+	
 	
 }
